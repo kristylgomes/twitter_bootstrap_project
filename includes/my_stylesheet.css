@@ -8,20 +8,56 @@ blockquote.pull-right { padding: 11px 15px 0px 25px; border: none; margin: 0px 0
 blockquote.pull-right p { padding: 0px 35px 20px 30px; background: url(../images/quotes_end.png) no-repeat right bottom; }
 blockquote.pull-right small { margin: 0px 35px 0px 0px; }
 
+.footer { font-size: .85em; }
+.footer.span12 { border-top: 1px solid #ddd; margin-top: 20px; padding-top: 10px; padding-bottom: 25px; }
+.footer .links { text-align: right; }
+.footer .links a { margin: 0px 0px 0px 20px; }
+
+.promos { padding: 10px 0px 35px 0px; }
+.promo { padding: 0px 0px 0px 90px; min-height: 75px; background-repeat: no-repeat; background-position: 0px 0px; }
+.promo-1 { background-image: url(../images/promo_01.jpg); }
+.promo-2 { background-image: url(../images/promo_02.jpg); }
+.promo-3 { background-image: url(../images/promo_03.jpg); }
+
+.banner a.logo{
+	border: none;
+	width: 115px; height: 63px;
+	display: inline-block;
+	background: url(../images/logo.png) no-repeat 0px 0px;
+}
+
+ul.nav{padding-top: 20px;}
+ul.nav li.dropdown-menu{margin-top: -1px;}
+ul.nav li.dropdown:hover ul.dropdown-menu{display: block;}
+
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
 
+	.footer .links { text-align: left; margin-top: 15px; }
+	.footer .links a { margin: 0px 20px 0px 0px; }
+
+	.promo { border-top: 1px solid #ddd; padding-top: 10px; background-position: 0px 10px; }
+	.promos div:first-child div { border: none; }
 }
 
 
 /* Landscape phones and down */
 @media (max-width: 600px) {
 
+	.banner a.logo{
+	width: 95px; height: 40px;
+	background: url(../images/logo_small.png) no-repeat 0px 0px;
+}
+
+
 }
  
 
 /* Large desktop */
 @media (min-width: 1200px) {
+
+	.promo { padding: 0px 20px 0px 110px; }
+	.promos div:last-child div { padding-right: 0px; }
 
 }
 
