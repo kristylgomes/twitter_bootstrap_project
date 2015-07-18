@@ -4,7 +4,9 @@
 
 /* Global Area */
 
-
+blockquote.pull-right { padding: 11px 15px 0px 25px; border: none; margin: 0px 0px 25px 25px; background: url(../images/quotes_begin.png) no-repeat 20px 0px; }
+blockquote.pull-right p { padding: 0px 35px 20px 30px; background: url(../images/quotes_end.png) no-repeat right bottom; }
+blockquote.pull-right small { margin: 0px 35px 0px 0px; }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
