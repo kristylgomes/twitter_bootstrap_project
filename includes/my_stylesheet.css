@@ -30,6 +30,17 @@ ul.nav{padding-top: 20px;}
 ul.nav li.dropdown-menu{margin-top: -1px;}
 ul.nav li.dropdown:hover ul.dropdown-menu{display: block;}
 
+.icon-phone{ background-position: 0px -140px; padding-right: 3px;}
+
+body {
+	background: #723106
+	url(../images/pattern_tile.gif)
+}
+
+.container{
+	background-color: #fff; padding: 10px 20px 10px 20px;
+}
+
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
 
@@ -38,8 +49,13 @@ ul.nav li.dropdown:hover ul.dropdown-menu{display: block;}
 
 	.promo { border-top: 1px solid #ddd; padding-top: 10px; background-position: 0px 10px; }
 	.promos div:first-child div { border: none; }
+
+	ul.nav {padding-top: 0px;}
 }
 
+	body{
+		background: none;
+	}
 
 /* Landscape phones and down */
 @media (max-width: 600px) {
