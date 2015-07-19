@@ -41,6 +41,26 @@ body {
 	background-color: #fff; padding: 10px 20px 10px 20px;
 }
 
+.carousel-container { position: relative; }
+.carousel-container .carousel-caption { border-top: 1px solid #fff; }
+.carousel-container .carousel-image { width: 100%; background-position: no-repeat 0px 0px; }
+.carousel-container .carousel-image.image-01 { height: 350px; background: url(../images/carousel_photo_01_large.jpg); }
+.carousel-container .carousel-image.image-02 { height: 350px; background: url(../images/carousel_photo_02_large.jpg); }
+.carousel-container .carousel-image.image-03 { height: 350px; background: url(../images/carousel_photo_03_large.jpg); }
+
+
+.carousel-container .carousel-control { top: 40%; opacity: 0.4; }
+.carousel-container .carousel-control:hover { opacity: 0.75; filter: alpha(opacity=75); }
+
+.header-search { width: 300px; text-align: right; position: absolute; top: 20px; right: 20px; }
+.header-search .input-append { width: 300px; }
+.header-search .input-append input { display: inline; width: 110px; margin-right: -4px; background-color: rgba(255,255,255,.75); color: #000; border: 1px solid #fff; }
+.header-search .input-append button { border: 1px solid #fff; }
+
+.header-search .input-append button i { opacity: 0.5; }
+
+
+
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
 
@@ -51,11 +71,17 @@ body {
 	.promos div:first-child div { border: none; }
 
 	ul.nav {padding-top: 0px;}
-}
 
 	body{
 		background: none;
 	}
+	.container { background-color: #fff; padding: 10px 0px 10px 0px; }
+	.carousel-container .carousel-image.image-01 { height: 275px; background: url(../images/carousel_photo_01_medium.jpg); }
+	.carousel-container .carousel-image.image-02 { height: 275px; background: url(../images/carousel_photo_02_medium.jpg); }
+	.carousel-container .carousel-image.image-03 { height: 275px; background: url(../images/carousel_photo_03_medium.jpg); }
+
+}
+
 
 /* Landscape phones and down */
 @media (max-width: 600px) {
@@ -64,6 +90,9 @@ body {
 	width: 95px; height: 40px;
 	background: url(../images/logo_small.png) no-repeat 0px 0px;
 }
+.carousel-container .carousel-image.image-01 { height: 200px; background: url(../images/carousel_photo_01_small.jpg); }
+.carousel-container .carousel-image.image-02 { height: 200px; background: url(../images/carousel_photo_02_small.jpg); }
+.carousel-container .carousel-image.image-03 { height: 200px; background: url(../images/carousel_photo_03_small.jpg); }
 
 
 }

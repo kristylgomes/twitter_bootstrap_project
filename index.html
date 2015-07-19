@@ -9,6 +9,8 @@
 	<link rel="stylesheet" type="text/css" href="includes/my_stylesheet.css" />
 	<script type="text/javascript" src="includes/jquery-1.7.2.min.js"></script>
 	<script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="bootstrap/js/bootstrap-carousel.js"></script>
+		<script type="text/javascript" src="bootstrap/js/bootstrap-typeahead.js"></script>
 	<script type="text/javascript" src="includes/my_javascript.js"></script>
 </head>
 <body>
@@ -63,11 +65,14 @@
 							</div>
 						</div>
 					</div>
-	<a class="left carousel-control" href="#myCarousel" data-slide="prev">Ü</a>
-	<a class="right carousel-control" href="#myCarousel" data-slide="next">Ý</a>
+					<a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+					<a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
 
 					<form class="form-horizontal header-search">
-						
+						<div class="input-append">
+							<input type="text" class="span3" size="10" type="text" data-provide="typeahead" data-items="4" data-source='["Albania","Algeria","Amsterdam","Argentina","Belgium","Belize","Bulgaria","Canada","Croatia","Cyprus","Czech Republic","Denmark","Estonia","Finland","Germany","Ghana","India","Indonesia","Jamaica","Japan","Libya","Lithuania","Mexico","Netherlands","New Zealand","Paraguay","Russia","Saudi Arabia","Switzerland","South Africa","Syria","Turkey","Ukraine","United Arab Emirates","United Kingdom","United States of America","Yemen","Yugoslavia"]'>
+							<button class="btn btn-inverse" type="button"><i class="icon-search icon-white"></i> Search</button>
+						</div>
 					</form>
 				</div>
 			</div>
@@ -76,7 +81,7 @@
 		<div class="row promos">
 			<div class="span4">
 				<div class="promo promo-1">
-					<p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+					<p><a href="#" onclick="changeSlide(2);">Check out this bridge!</a> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
 					<p><a class="btn" href="#"><i class="icon-camera"></i> Learn more</a></p>
 				</div>
 			</div>
